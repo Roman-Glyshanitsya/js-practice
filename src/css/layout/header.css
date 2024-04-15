@@ -1,0 +1,43 @@
+.header {
+  color: #000;
+  font-family: "Montserrat Alternates";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 21px 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 93px;
+  height: 38px;
+  margin-right: 80px;
+}
+
+.nav {
+  margin-right: 360px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav__item {}
+
+.nav__link {}
+
+.switch-dark {
+  width: 40px;
+  height: 20px;
+  background-color: gray;
+  margin-right: 50px;
+}
+
+.header__congrats {}
