@@ -1,0 +1,32 @@
+main {
+    background-color: #EEE;
+    background-image: url('/img/main-bacground.png');
+    background-size: cover;
+}
+
+.container {
+    width: 1090px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-align: center;
+    padding: 36px 0;
+}
+
+.line {
+    width: 536px;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+}
+
+.section__title {
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-align: center;
+    margin: 36px 0;
+}
