@@ -5,6 +5,13 @@
     <link rel="icon" type="image/svg+xml" href="/js-practice/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Games</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-practice/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-practice/assets/index-47afafc3.css">
+    <link rel="stylesheet" href="/js-practice/assets/index-1ebff69b.css">
   </head>
   <body>
     <header class="header">
@@ -25,6 +32,17 @@
       <ul class="nav__list">
         <li class="nav__item">
           <a href="" class="nav__link">Інтерактив</a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Числовий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ігровий</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Ознайомчий</a>
+            </li>
+          </ul>
         </li>
         <li class="nav__item">
           <a href="" class="nav__link">Наша команда</a>
@@ -34,7 +52,9 @@
         </li>
       </ul>
     </nav>
-    <div class="switch-dark"></div>
+    <div class="switch-dark">
+      <img id="icon" src="/js-practice/assets/sun-632ff8a8.svg" alt="" width="15" height="15" />
+    </div>
     <p class="header__congrats">Вітаємо, User!</p>
   </div>
 </header>
@@ -43,29 +63,22 @@
     <main>
       <div class="container">
         <h1>Популярні інетрактивні ігри</h1>
-        <!-- <header class="header">
-  <div class="container">
-    <a href="#" class="logo">
-      <img src="/img/logo.png" alt="logo" />
-    </a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="" class="nav__link">Інтерактив</a>
-        </li>
-        <li class="nav__item">
-          <a href="" class="nav__link">Наша команда</a>
-        </li>
-        <li class="nav__item">
-          <a href="" class="nav__link">Контакти</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="switch-dark"></div>
-    <p class="header__congrats">Вітаємо, User!</p>
-  </div>
-</header>
- -->
+        <section class="birth-year">
+  <div class="line"></div>
+  <h2 class="section__title">Перевір в який рік ти народився</h2>
+  <input
+    class="birth-year__input"
+    type="number"
+    placeholder="Введіть рік народження"
+  />
+  <button class="birth-year__button">
+    <svg class="birth-year__button__icon" width="15" height="15">
+      <use href="../img/icons/symbol-defs.svg#icon-loupe"></use>
+    </svg>
+  </button>
+  <p class="birth-year__text">Lorem, ipsum dolor.</p>
+</section>
+
       </div>
     </main>
 
