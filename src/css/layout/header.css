@@ -1,10 +1,9 @@
 .header {
   color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: "Montserrat Alternates";
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding: 21px 0;
 }
 
@@ -13,10 +12,29 @@
   align-items: center;
 }
 
-.logo {
-  width: 93px;
-  height: 38px;
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   margin-right: 80px;
+}
+
+.logo__icon {
+  width: 40px;
+  height: 38px;
+  stroke: var(--secondary-color);
+}
+
+.logo__text__coding {
+  color: var(--secondary-color);
+  font-size: 12px;
+}
+
+.logo__text__magic {
+  color: var(--secondary-color);
+  font-family: "Sacramento", cursive;
+  font-size: 12px;
+  text-align: end;
 }
 
 .nav {
@@ -31,7 +49,17 @@
 
 .nav__item {}
 
-.nav__link {}
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.nav__link__icon {
+  width: 12px;
+  height: 16px;
+}
 
 .nav__item:first-child {
   position: relative;
@@ -48,7 +76,7 @@
 
   width: 100%;
 
-  border: 1px solid #000;
+  border: 1px solid var(--secondary-color);
   border-top: none;
   border-radius: 0px 0px 20px 20px;
   /* padding: 10px 40px; */
