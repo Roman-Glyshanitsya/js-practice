@@ -4,6 +4,11 @@
 
 .section__title {}
 
+.birth-year__input-thumb {
+    display: flex;
+    justify-content: space-around;
+}
+
 .birth-year__input {}
 
 .birth-year__button {
