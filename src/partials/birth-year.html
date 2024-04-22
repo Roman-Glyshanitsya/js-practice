@@ -2,18 +2,20 @@
   <div class="line"></div>
   <h2 class="section__title">Перевір в який рік ти народився</h2>
   <div class="birth-year__input-thumb">
-    <label for="">
+    <form class="birth-year__form">
       <input
         class="birth-year__input"
-        type="number"
+        type="text"
+        pattern="^[ 0-9]+$"
         placeholder="Введіть рік народження"
+        title="Введіть рік"
       />
       <button class="birth-year__button">
         <svg class="birth-year__button__icon" width="15" height="15">
-          <use href="../img/icons/symbol-defs.svg#icon-loupe"></use>
+          <use href="/img/icons/symbol-defs.svg#icon-loupe"></use>
         </svg>
       </button>
-    </label>
+    </form>
     <p class="birth-year__text">Lorem, ipsum dolor.</p>
   </div>
 </section>

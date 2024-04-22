@@ -1,21 +1,20 @@
-.birth-year {}
+.guess-number {}
 
-.birth-year__input-thumb {
+.guess-number__input-thumb {
     display: flex;
     justify-content: space-around;
     padding-bottom: 36px;
 }
 
-.birth-year__form {
+.guess-number__form {
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 
     display: flex;
-    width: 215px;
+    width: 150px;
     height: 35px;
-
 }
 
-.birth-year__input {
+.guess-number__input {
     padding-left: 10px;
     border: none;
     border-radius: 20px 0px 0px 20px;
@@ -23,10 +22,9 @@
 
     width: 100%;
     height: 100%;
-
 }
 
-.birth-year__input::placeholder {
+.guess-number__input::placeholder {
     color: #7E7E7E;
     font-family: "Montserrat Alternates";
     font-size: 12px;
@@ -36,12 +34,12 @@
 
 }
 
-.birth-year__button {
+.guess-number__button {
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     background-color: #000;
 }
 
-.birth-year__button__icon {}
+.guess-number__button__icon {}
 
-.birth-year__text {}
+.guess-number__text {}

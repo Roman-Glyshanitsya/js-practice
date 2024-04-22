@@ -1,0 +1,49 @@
+.p-r-s {}
+
+
+.p-r-s__thumb {
+    display: flex;
+    margin-left: 417px;
+    margin-bottom: 36px;
+}
+
+.p-r-s__icons-list {
+    display: flex;
+    gap: 38px;
+    margin-right: 104px;
+}
+
+.p-r-s__icons-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+
+.p-r-s__result-thumb {
+    color: var(--secondary-color);
+    font-size: 12px;
+    line-height: 170%;
+}
+
+.p-r-s__result-title {}
+
+.p-r-s__result-comp {}
+
+.p-r-s__result-user {}
+
+.p-r-s__winner {
+    color: #039900;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.p-r-s__comp-choice {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
