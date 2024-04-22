@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-practice/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-practice/assets/index-b5c15e4f.css">
+    <link rel="stylesheet" href="/js-practice/assets/index-e94f946f.css">
   </head>
   <body>
     <header class="header">
@@ -81,20 +81,66 @@
   <div class="line"></div>
   <h2 class="section__title">Перевір в який рік ти народився</h2>
   <div class="birth-year__input-thumb">
-    <label for="">
+    <form class="birth-year__form">
       <input
         class="birth-year__input"
-        type="number"
+        type="text"
+        pattern="^[ 0-9]+$"
         placeholder="Введіть рік народження"
+        title="Введіть рік"
       />
       <button class="birth-year__button">
         <svg class="birth-year__button__icon" width="15" height="15">
-          <use href="../img/icons/symbol-defs.svg#icon-loupe"></use>
+          <use href="/js-practice/assets/symbol-defs-65ae3c0f.svg#icon-loupe"></use>
         </svg>
       </button>
-    </label>
+    </form>
     <p class="birth-year__text">Lorem, ipsum dolor.</p>
   </div>
+</section>
+
+        <section class="guess-number">
+  <div class="line"></div>
+  <h2 class="section__title">Вгадай число, яке загадав комп’ютер</h2>
+  <div class="guess-number__input-thumb">
+    <form class="guess-number__form">
+      <input
+        class="guess-number__input"
+        type="text"
+        pattern="^[ 0-9]+$"
+        placeholder="Введіть число"
+        title="Введіть число"
+      />
+      <button class="guess-number__button">
+        <svg class="guess-number__button__icon" width="15" height="15">
+          <use href="/js-practice/assets/symbol-defs-65ae3c0f.svg#icon-loupe"></use>
+        </svg>
+      </button>
+    </form>
+    <p class="guess-number__text">Lorem, ipsum dolor.</p>
+  </div>
+</section>
+
+        <section class="p-r-s">
+  <div class="line"></div>
+  <h2 class="section__title">Камінь - ножиці - папір</h2>
+
+  <div class="p-r-s__thumb">
+    <ul class="p-r-s__icons-list">
+      <li class="p-r-s__icons-item"></li>
+      <li class="p-r-s__icons-item"></li>
+      <li class="p-r-s__icons-item"></li>
+    </ul>
+
+    <div class="p-r-s__result-thumb">
+      <p class="p-r-s__result-title">Рахунок:</p>
+      <p class="p-r-s__result-comp">Комп’ютер - 0</p>
+      <p class="p-r-s__result-user">Ви - 0</p>
+    </div>
+  </div>
+
+  <p class="p-r-s__winner">Ви виграли раунд!</p>
+  <div class="p-r-s__comp-choice"></div>
 </section>
 
       </div>
