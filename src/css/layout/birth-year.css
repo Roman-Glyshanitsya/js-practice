@@ -3,7 +3,6 @@
 .birth-year__input-thumb {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 36px;
 }
 
 .birth-year__form {

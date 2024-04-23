@@ -1,0 +1,79 @@
+.dinosaur {}
+
+.dinosaur__container {
+    position: relative;
+    height: 240px;
+    width: 720px;
+    background-image: url('/img/dinosaur/dinosaur-background.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.dinosaur__overlay {}
+
+.dinosaur__results {}
+
+.game-over__thumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: rgb(224, 224, 224);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.dinosaur__points {}
+
+.try-again__btn {
+    width: 120px;
+    height: 30px;
+    font-family: "Montserrat Alternates", sans-serif;
+    border-radius: 8px;
+    transition: all 400ms ease-in-out;
+}
+
+.try-again__btn:hover {
+    background-color: #7E7E7E;
+    color: #fff;
+}
+
+.dinosaur__player {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    width: 50px;
+    height: 60px;
+}
+
+.dinosaur__cactus {
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    width: 32px;
+    height: 50px;
+}
+
+.dinosaur__start-btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #D7D7D7;
+    margin: 0 auto;
+    transition: all 400ms ease-in-out;
+}
+
+.dinosaur__start-btn:hover {
+    background-color: #7E7E7E;
+    color: #fff;
+}
