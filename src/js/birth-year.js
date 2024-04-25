@@ -17,3 +17,8 @@ function onBtnClick(e) {
     textYear.style.color = '#990000';
   }
 }
+
+inputYear.addEventListener('blur', () => {
+  inputYear.value = '';
+  textYear.textContent = '';
+});
