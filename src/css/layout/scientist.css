@@ -1,0 +1,48 @@
+.scientist {}
+
+.sceintist__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px 59px;
+    width: 577px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.scientist__item {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+
+.scientist__button__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 36px;
+    padding-bottom: 36px;
+}
+
+.scientist__button__item {
+    flex-basis: calc((100% - 36px) / 2);
+}
+
+.scientist__button__item:nth-child(odd):not(:last-child) {
+    text-align: end;
+}
+
+.scientist__button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+}
