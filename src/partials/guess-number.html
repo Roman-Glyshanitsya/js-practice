@@ -2,20 +2,21 @@
   <div class="line"></div>
   <h2 class="section__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="guess-number__input-thumb">
-    <form class="guess-number__form">
+    <form class="guess-number__form" autocomplete="off">
       <input
         class="guess-number__input"
         type="text"
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
+        id="guess__input"
       />
-      <button class="guess-number__button">
+      <button class="guess-number__button" id="guess__btn">
         <svg class="guess-number__button__icon" width="15" height="15">
           <use href="/img/icons/symbol-defs.svg#icon-loupe"></use>
         </svg>
       </button>
     </form>
-    <p class="guess-number__text">Lorem, ipsum dolor.</p>
+    <p class="guess-number__text" id="guess__text">Введіть число від 1 до 10</p>
   </div>
 </section>

@@ -18,7 +18,7 @@ function onBtnClick(e) {
   }
 }
 
-inputYear.addEventListener('blur', () => {
-  inputYear.value = '';
-  textYear.textContent = '';
-});
+// inputYear.addEventListener('blur', () => {
+//   inputYear.value = '';
+//   textYear.textContent = '';
+// });

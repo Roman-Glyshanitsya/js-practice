@@ -1,8 +1,9 @@
-.guess-number {}
-
 .guess-number__input-thumb {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 575px;
+    margin: 0 auto;
 }
 
 .guess-number__form {
@@ -41,4 +42,7 @@
 
 .guess-number__button__icon {}
 
-.guess-number__text {}
+.guess-number__text {
+    color: var(--secondary-color);
+    text-align: right;
+}

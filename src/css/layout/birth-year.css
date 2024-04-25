@@ -1,5 +1,3 @@
-.birth-year {}
-
 .birth-year__input-thumb {
     display: flex;
     justify-content: space-between;
@@ -42,8 +40,6 @@
     border-radius: 0px 20px 20px 0px;
     background-color: #000;
 }
-
-.birth-year__button__icon {}
 
 .birth-year__text {
     text-align: right;
