@@ -1,12 +1,11 @@
-.guess-number__input-thumb {
+.time-calculator__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 575px;
-    margin: 0 auto;
+    gap: 33px;
 }
 
-.guess-number__form {
+.time-calculator__form {
     filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 
     display: flex;
@@ -14,7 +13,7 @@
     height: 35px;
 }
 
-.guess-number__input {
+.time-calculator__input {
     padding-left: 10px;
     border: none;
     border-radius: 20px 0px 0px 20px;
@@ -24,7 +23,7 @@
     height: 100%;
 }
 
-.guess-number__input::placeholder {
+.time-calculator__input::placeholder {
     color: #7E7E7E;
     font-family: "Montserrat Alternates";
     font-size: 12px;
@@ -34,16 +33,24 @@
 
 }
 
-.guess-number__button {
+.time-calculato__button {
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     background-color: #000;
 }
 
-.guess-number__text {
-    color: var(--secondary-color);
-    text-align: right;
+.time-calculator__dot-line {
+    width: 100px;
+    /* height: 0px; */
 
+
+
+    border: 1px dashed var(--secondary-color);
+}
+
+.time-calculator__result-container {
+    color: var(--secondary-color);
+    font-family: "Montserrat Alternates";
     font-size: 12px;
     font-weight: 400;
 }

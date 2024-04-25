@@ -1,4 +1,34 @@
 <section class="calculator">
   <div class="line"></div>
   <h2 class="section__title">Калькулятор</h2>
+  <div class="calculator__container">
+    <input
+      type="text"
+      class="calculator__input"
+      pattern="^[ 0-9]+$"
+      placeholder="Введіть число"
+    />
+    <ul class="calculator__operation__list">
+      <li class="calculator__operation__item">
+        <button class="calculator__operation__button">+</button>
+      </li>
+      <li class="calculator__operation__item">
+        <button class="calculator__operation__button">*</button>
+      </li>
+      <li class="calculator__operation__item">
+        <button class="calculator__operation__button">-</button>
+      </li>
+      <li class="calculator__operation__item">
+        <button class="calculator__operation__button">/</button>
+      </li>
+    </ul>
+    <input
+      type="text"
+      class="calculator__input"
+      pattern="^[ 0-9]+$"
+      placeholder="Введіть число"
+    />
+    <button class="calculator__result__button">=</button>
+    <p class="calculator__result">Результат</p>
+  </div>
 </section>

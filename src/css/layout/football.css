@@ -1,0 +1,16 @@
+.football {}
+
+.football__thumb {}
+
+.football__field {
+    width: 640px;
+    height: 406px;
+    background-image: url('/img/football-field.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    margin: 0 auto;
+}
+
+.football__ball {}

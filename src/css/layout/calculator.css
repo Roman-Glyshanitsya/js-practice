@@ -1,0 +1,92 @@
+.calculator__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.calculator__input {
+    width: 135px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+    padding: 10px 20px;
+}
+
+.calculator__input::placeholder {
+    color: #7E7E7E;
+    /* font-family: "Montserrat Alternates"; */
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.calculator__operation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 60px;
+}
+
+.calculator__operation__item {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.calculator__operation__button {
+    background-color: transparent;
+    border: none;
+
+    color: var(--primary-color);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.calculator__result__button {
+    width: 27px;
+    height: 25px;
+
+    color: var(--primary-color);
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+
+    border: none;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.calculator__result {
+    width: 118px;
+    height: 35px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #D7D7D7;
+
+    color: #7E7E7E;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
