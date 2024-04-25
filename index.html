@@ -66,7 +66,7 @@
     <img
       class="switch-dark__icon"
       id="icon"
-      src="/js-practice/assets/dark-theme-icon-8e966008.svg"
+      src="/js-practice/assets/light-theme-icon-8d45d858.svg"
       alt=""
     />
     <p class="header__congrats">Вітаємо, User!</p>
@@ -81,21 +81,22 @@
   <div class="line"></div>
   <h2 class="section__title">Перевір в який рік ти народився</h2>
   <div class="birth-year__input-thumb">
-    <form class="birth-year__form">
+    <form class="birth-year__form" autocomplete="off">
       <input
         class="birth-year__input"
         type="text"
         pattern="^[ 0-9]+$"
         placeholder="Введіть рік народження"
         title="Введіть рік"
+        id="year__input"
       />
-      <button class="birth-year__button">
+      <button class="birth-year__button" id="year__btn">
         <svg class="birth-year__button__icon" width="15" height="15">
           <use href="/js-practice/assets/symbol-defs-65ae3c0f.svg#icon-loupe"></use>
         </svg>
       </button>
     </form>
-    <p class="birth-year__text">Lorem, ipsum dolor.</p>
+    <p class="birth-year__text" id="year__text"></p>
   </div>
 </section>
 
