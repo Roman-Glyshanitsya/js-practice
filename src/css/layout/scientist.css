@@ -14,7 +14,11 @@
     width: 100px;
     height: 100px;
     border-radius: 20px;
+    overflow: hidden;
     background-color: #D9D9D9;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
 }
 
 .scientist__button__list {
