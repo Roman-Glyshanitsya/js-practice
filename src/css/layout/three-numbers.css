@@ -1,0 +1,36 @@
+.three-numbers {}
+
+.three-numbers__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    margin-bottom: 36px;
+}
+
+.three-numbers__item {}
+
+.three-numbers__input {
+    width: 135px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+    padding: 10px 20px;
+}
+
+.three-numbers__input::placeholder {
+    color: #7E7E7E;
+    /* font-family: "Montserrat Alternates"; */
+    font-size: 12px;
+    /* font-weight: 400; */
+    text-align: center;
+}
+
+.three-numbers__result-text {
+    color: var(--secondary-color);
+    font-size: 12px;
+    text-align: center;
+}
