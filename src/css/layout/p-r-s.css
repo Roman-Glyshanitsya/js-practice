@@ -23,10 +23,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: all 350ms ease-in-out;
+}
+
+.p-r-s__icons-item:hover,
+.p-r-s__icons-item:focus {
+    transform: scale(1.1);
 }
 
 .p-r-s__icons-btn {
-
     background-color: transparent;
     border: none;
 }

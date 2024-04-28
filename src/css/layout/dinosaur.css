@@ -39,7 +39,7 @@
     height: 30px;
     font-family: "Montserrat Alternates", sans-serif;
     border-radius: 8px;
-    transition: all 400ms ease-in-out;
+    transition: all 350ms ease-in-out;
 }
 
 .try-again__btn:hover {
@@ -70,7 +70,7 @@
     border-radius: 20px;
     background-color: #D7D7D7;
     margin: 0 auto;
-    transition: all 400ms ease-in-out;
+    transition: all 350ms ease-in-out;
 }
 
 .dinosaur__start-btn:hover {

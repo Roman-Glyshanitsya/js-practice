@@ -40,13 +40,21 @@
 .scientist__button {
     padding: 10px 20px;
     border-radius: 20px;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    background-color: #000;
     box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 
-
+    color: #fff;
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 12px;
     font-weight: 400;
     text-align: left;
+
+    transition: all 350ms ease-in-out;
+}
+
+.scientist__button:hover,
+.scientist__button:focus {
+    color: #000;
+    background-color: #D9D9D9;
 }

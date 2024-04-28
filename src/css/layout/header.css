@@ -13,28 +13,12 @@
 }
 
 .logo__link {
-  display: flex;
-  align-items: center;
-  gap: 9px;
   margin-right: 80px;
 }
 
 .logo__icon {
-  width: 40px;
+  width: 93px;
   height: 38px;
-  stroke: var(--secondary-color);
-}
-
-.logo__text__coding {
-  color: var(--secondary-color);
-  font-size: 12px;
-}
-
-.logo__text__magic {
-  color: var(--secondary-color);
-  font-family: "Sacramento", cursive;
-  font-size: 12px;
-  text-align: end;
 }
 
 .nav {
