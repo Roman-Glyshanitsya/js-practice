@@ -1,6 +1,6 @@
 .scientist {}
 
-.sceintist__list {
+.scientist__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,6 +19,26 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.scientist__text-thumb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
 }
 
 .scientist__button__list {
