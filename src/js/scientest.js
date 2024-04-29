@@ -24,47 +24,103 @@ sceintistBtnsList.addEventListener('click', filteredScientest);
 function filteredScientest(e) {
   switch (e.target.id) {
     case '1':
-      sceintistGalleryList.innerHTML = markupScientistGalary(
-        scientists.filter(({ born }) => born >= 1800 && born < 1900)
+      const filteredByBornList = scientists.filter(
+        ({ born }) => born >= 1800 && born < 1900
       );
+
+      sceintistGalleryList.innerHTML =
+        markupScientistGalary(filteredByBornList);
       break;
 
-    // case '2':
-    //   sceintistGalleryList.innerHTML = markupScientistGalary(
-    //     scientists.find(
-    //       ({ name, surname }) => name === 'Albert' && surname === 'Einstein'
-    //     )
-    //   );
-    //   break;
+    case '2':
+      const einstein = scientists.find(
+        ({ name, surname }) => name === 'Albert' && surname === 'Einstein'
+      );
+
+      sceintistGalleryList.innerHTML = markupScientistGalary([einstein]);
+      break;
 
     case '3':
-      sceintistGalleryList.innerHTML = markupScientistGalary(
-        [...scientists].sort((a, b) => a.name.localeCompare(b.name))
+      const sortedbyNameList = [...scientists].sort((a, b) =>
+        a.name.localeCompare(b.name)
       );
+
+      sceintistGalleryList.innerHTML = markupScientistGalary(sortedbyNameList);
       break;
 
     case '4':
-      sceintistGalleryList.innerHTML = markupScientistGalary(
-        scientists.filter(({ surname }) => surname.startsWith('C'))
+      const filteredSurnameList = scientists.filter(({ surname }) =>
+        surname.startsWith('C')
       );
+
+      sceintistGalleryList.innerHTML =
+        markupScientistGalary(filteredSurnameList);
       break;
 
     case '5':
-      sceintistGalleryList.innerHTML = markupScientistGalary(
-        [...scientists].sort((a, b) => a.dead - a.born - (b.dead - b.born))
+      const sortedByLifeSpan = [...scientists].sort(
+        (a, b) => a.dead - a.born - (b.dead - b.born)
       );
+
+      sceintistGalleryList.innerHTML = markupScientistGalary(sortedByLifeSpan);
       break;
 
     case '6':
-      sceintistGalleryList.innerHTML = markupScientistGalary(
-        scientists.filter(({ name }) => name[0] !== 'A')
+      const sortedByFirstLetter = scientists.filter(
+        ({ name }) => name[0] !== 'A'
       );
+
+      sceintistGalleryList.innerHTML =
+        markupScientistGalary(sortedByFirstLetter);
       break;
 
     case '7':
-      sceintistGalleryList.innerHTML =
-        markupScientistGalary();
-        // scientists.find((a, b) => b.born - a.born)
+      const filteredByMaxBorn = [...scientists].sort(
+        (a, b) => b.born - a.born
+      )[0];
+      sceintistGalleryList.innerHTML = markupScientistGalary([
+        filteredByMaxBorn,
+      ]);
       break;
+
+    case '8':
+      const longestLivedScientist = scientists.reduce(
+        (maxLivedScientist, currentScientist) => {
+          const currentLifespan = currentScientist.dead - currentScientist.born;
+          const maxLifespan = maxLivedScientist.dead - maxLivedScientist.born;
+
+          return currentLifespan > maxLifespan
+            ? currentScientist
+            : maxLivedScientist;
+        }
+      );
+
+      const shortestLivedScientist = scientists.reduce(
+        (minLivedScientist, currentScientist) => {
+          const currentLifespan = currentScientist.dead - currentScientist.born;
+          const minLifespan = minLivedScientist.dead - minLivedScientist.born;
+
+          return currentLifespan < minLifespan
+            ? currentScientist
+            : minLivedScientist;
+        }
+      );
+      sceintistGalleryList.innerHTML = markupScientistGalary([
+        longestLivedScientist,
+        shortestLivedScientist,
+      ]);
+      break;
+
+    case '9':
+      const filterByCommonLetter = scientists.filter(
+        ({ name, surname }) => name[0] === surname[0]
+      );
+
+      sceintistGalleryList.innerHTML =
+        markupScientistGalary(filterByCommonLetter);
+      break;
+
+    default:
+      sceintistGalleryList.innerHTML = markupScientistGalary(scientists);
   }
 }
