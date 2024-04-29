@@ -1,7 +1,7 @@
 import { scientists } from '../data/scientist-data';
 
 const sceintistGalleryList = document.getElementById('scientist-gallery');
-const sceintistBtnsList = document.querySelectorAll('.scientist__button');
+const sceintistBtnsList = document.getElementById('scientist__filter-list');
 
 function markupScientistGalary(scientists) {
   return scientists
@@ -19,38 +19,52 @@ function markupScientistGalary(scientists) {
 
 sceintistGalleryList.innerHTML = markupScientistGalary(scientists);
 
-// Які вчені народилися в 19 ст.
-const filteredFirst = scientists.filter(
-  ({ born }) => born >= 1800 && born < 1900
-);
+sceintistBtnsList.addEventListener('click', filteredScientest);
 
-sceintistBtnsList[0].addEventListener('click', () => {
-  sceintistGalleryList.innerHTML = markupScientistGalary(filteredFirst);
-});
+function filteredScientest(e) {
+  switch (e.target.id) {
+    case '1':
+      sceintistGalleryList.innerHTML = markupScientistGalary(
+        scientists.filter(({ born }) => born >= 1800 && born < 1900)
+      );
+      break;
 
-// Відсортувати вчених за алфавітом
-const sortedThird = [...scientists].sort((a, b) =>
-  a.name.localeCompare(b.name)
-);
+    // case '2':
+    //   sceintistGalleryList.innerHTML = markupScientistGalary(
+    //     scientists.find(
+    //       ({ name, surname }) => name === 'Albert' && surname === 'Einstein'
+    //     )
+    //   );
+    //   break;
 
-sceintistBtnsList[2].addEventListener('click', () => {
-  sceintistGalleryList.innerHTML = markupScientistGalary(sortedThird);
-});
+    case '3':
+      sceintistGalleryList.innerHTML = markupScientistGalary(
+        [...scientists].sort((a, b) => a.name.localeCompare(b.name))
+      );
+      break;
 
-// sceintistBtnsList.addEventListener('click', filteredScientest);
+    case '4':
+      sceintistGalleryList.innerHTML = markupScientistGalary(
+        scientists.filter(({ surname }) => surname.startsWith('C'))
+      );
+      break;
 
-// function filteredScientest(e) {
-//   switch (e.target.sceintistBtnsList[index]) {
-//     case index === 0:
-//       sceintistGalleryList.innerHTML = markupScientistGalary(
-//         scientists.filter(({ born }) => born >= 1800 && born < 1900)
-//       );
-//       break;
+    case '5':
+      sceintistGalleryList.innerHTML = markupScientistGalary(
+        [...scientists].sort((a, b) => a.dead - a.born - (b.dead - b.born))
+      );
+      break;
 
-//     case index === 2:
-//       sceintistGalleryList.innerHTML = markupScientistGalary(
-//         [...scientists].sort((a, b) => a.name.localeCompare(b.name))
-//       );
-//       break;
-//   }
-// }
+    case '6':
+      sceintistGalleryList.innerHTML = markupScientistGalary(
+        scientists.filter(({ name }) => name[0] !== 'A')
+      );
+      break;
+
+    case '7':
+      sceintistGalleryList.innerHTML =
+        markupScientistGalary();
+        // scientists.find((a, b) => b.born - a.born)
+      break;
+  }
+}
