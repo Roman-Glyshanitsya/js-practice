@@ -36,3 +36,21 @@ const sortedThird = [...scientists].sort((a, b) =>
 sceintistBtnsList[2].addEventListener('click', () => {
   sceintistGalleryList.innerHTML = markupScientistGalary(sortedThird);
 });
+
+// sceintistBtnsList.addEventListener('click', filteredScientest);
+
+// function filteredScientest(e) {
+//   switch (e.target.sceintistBtnsList[index]) {
+//     case index === 0:
+//       sceintistGalleryList.innerHTML = markupScientistGalary(
+//         scientists.filter(({ born }) => born >= 1800 && born < 1900)
+//       );
+//       break;
+
+//     case index === 2:
+//       sceintistGalleryList.innerHTML = markupScientistGalary(
+//         [...scientists].sort((a, b) => a.name.localeCompare(b.name))
+//       );
+//       break;
+//   }
+// }
