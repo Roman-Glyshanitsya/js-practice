@@ -19,7 +19,7 @@ export const scientists = [
   {
     name: 'Galileo',
     surname: 'Galilei',
-    image: '/img/scientists/galileo-galilei.jpg',
+    image: '/img/galileo-galilei.jpg',
     born: 1564,
     dead: 1642,
     id: 3,
