@@ -6,38 +6,43 @@ const userResults = document.getElementById('user-result');
 
 let compWins = 0;
 let userWins = 0;
-compResults.textContent = `${compWins}`;
-userResults.textContent = `${userWins}`;
+
+function compChoiceMarkup(element) {
+  if (element === 'stone') {
+    compChoiceEl.innerHTML =
+      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/stone.svg" />';
+  } else if (element === 'scissors') {
+    compChoiceEl.innerHTML =
+      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/scissors.svg" />';
+  } else if (element === 'paper') {
+    compChoiceEl.innerHTML =
+      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/paper.svg" />';
+  } else {
+    compChoiceEl.innerHTML = '';
+  }
+}
 
 userChoiceBtns.addEventListener('click', e => {
-  //   console.log(e.target.id === 'stone');
-
-  // Comp choices
   const choiceArray = ['stone', 'scissors', 'paper'];
   const computerRandomNumber = Math.floor(Math.random() * 3);
   const computerChoice = choiceArray[computerRandomNumber];
 
-  if (computerChoice === 'stone') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/stone.svg" />';
+  compChoiceMarkup(computerChoice);
+
+  if (e.target.id === computerChoice) {
+    winnerText.textContent = 'Нічия!';
+    winnerText.style.color = 'var(--secondary-color)';
+  } else if (
+    (e.target.id === 'stone' && computerChoice === 'scissors') ||
+    (e.target.id === 'scissors' && computerChoice === 'paper') ||
+    (e.target.id === 'paper' && computerChoice === 'stone')
+  ) {
+    winnerText.textContent = 'Ви виграли раунд!';
+    winnerText.style.color = '#039900';
+    userResults.textContent = userWins += 1;
+  } else {
+    winnerText.textContent = 'Комп’ютер виграв раунд!';
+    winnerText.style.color = '#900';
+    compResults.textContent = compWins += 1;
   }
-
-  if (computerChoice === 'scissors') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/scissors.svg" />';
-  }
-
-  if (computerChoice === 'paper') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/paper.svg" />';
-  }
-
-  // User Choices
-  //   if (e.target.id === computerChoice) {
-  //     winnerText.textContent = 'Нічия!';
-  //     }
-
-  //     if (e.target.id === 'scissors' && e.target.id === 'scissors') {
-  //       winnerText.textContent = 'Нічия!';
-  //     }
 });
