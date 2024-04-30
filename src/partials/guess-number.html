@@ -2,14 +2,14 @@
   <div class="line"></div>
   <h2 class="section__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="guess-number__input-thumb">
-    <form class="guess-number__form" autocomplete="off">
+    <form class="guess-number__form" autocomplete="off" id="guess-number-form">
       <input
         class="guess-number__input"
         type="text"
+        name="usernumber"
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
-        id="guess__input"
       />
       <button class="guess-number__button" id="guess__btn">
         <svg class="guess-number__button__icon" width="15" height="15">

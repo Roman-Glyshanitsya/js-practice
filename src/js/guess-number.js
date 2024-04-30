@@ -1,4 +1,4 @@
-const inputGuess = document.getElementById('guess__input');
+const form = document.getElementById('guess-number-form');
 const btnGuess = document.getElementById('guess__btn');
 const textGuess = document.getElementById('guess__text');
 
@@ -8,7 +8,7 @@ function onBtnClick(e) {
   e.preventDefault();
 
   const computerRandomNumber = Math.floor(Math.random() * 10 + 1);
-  let userNumber = Number.parseInt(inputGuess.value);
+  let userNumber = Number(form.usernumber.value);
 
   if (computerRandomNumber === userNumber) {
     textGuess.textContent = `Вітаю, ви вгадали число! ${computerRandomNumber}`;
@@ -22,7 +22,7 @@ function onBtnClick(e) {
   }
 }
 
-// inputGuess.addEventListener('blur', () => {
+// form.addEventListener('blur', () => {
 //   inputGuess.value = '';
 //   textGuess.textContent = 'Введіть число від 1 до 10';
 // });

@@ -2,14 +2,18 @@
   <div class="line"></div>
   <h2 class="section__title">Калькулятор часу</h2>
   <div class="time-calculator__container">
-    <form class="time-calculator__form">
+    <form
+      class="time-calculator__form"
+      autocomplete="off"
+      id="time-calculator-form"
+    >
       <input
         class="time-calculator__input"
         type="text"
+        name="usernumber"
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
-        id="value"
       />
       <button class="time-calculato__button" id="button">
         <svg class="time-calculato__button__icon" width="15" height="15">
