@@ -2,12 +2,12 @@ const field = document.getElementById('field');
 const ball = document.getElementById('ball');
 
 const center = ball.offsetWidth / 2;
-let ballOn = true;
+let ballSpin = false;
 
 field.addEventListener('click', onFieldClick);
 
 function onFieldClick(e) {
-  if (ballOn) {
+  if (!ballSpin) {
     let mouseX = e.offsetX;
     let mouseY = e.offsetY;
 
@@ -24,13 +24,13 @@ function onFieldClick(e) {
     mouseY = mouseY < center ? center : mouseY;
 
     ball.classList.add('rotating');
-    ballOn = false;
+    ballSpin = true;
     ball.style.left = `${mouseX - center}px`;
     ball.style.top = `${mouseY - center}px`;
 
     setTimeout(() => {
       ball.classList.remove('rotating');
-      ballOn = true;
+      ballSpin = false;
     }, 1000);
   }
 }
