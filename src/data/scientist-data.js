@@ -2,7 +2,8 @@ export const scientists = [
   {
     name: 'Albert',
     surname: 'Einstein',
-    image: '/main/src/img/scientists/albert-einstein.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/albert-einstein.jpg?raw=true',
     born: 1879,
     dead: 1955,
     id: 1,
@@ -19,7 +20,8 @@ export const scientists = [
   {
     name: 'Galileo',
     surname: 'Galilei',
-    image: '/img/galileo-galilei.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/galileo-galilei.jpg?raw=true',
     born: 1564,
     dead: 1642,
     id: 3,
@@ -27,7 +29,8 @@ export const scientists = [
   {
     name: 'Marie',
     surname: 'Curie',
-    image: '/img/scientists/marie-curie.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/marie-curie.jpg?raw=true',
     born: 1867,
     dead: 1934,
     id: 4,
@@ -35,7 +38,8 @@ export const scientists = [
   {
     name: 'Johannes',
     surname: 'Kepler',
-    image: '/img/scientists/johannes-kepler.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/johannes-kepler.jpg?raw=true',
     born: 1571,
     dead: 1630,
     id: 5,
@@ -43,7 +47,8 @@ export const scientists = [
   {
     name: 'Nicolaus',
     surname: 'Copernicus',
-    image: '/img/scientists/nicolaus-copernicus.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/nicolaus-copernicus.jpg?raw=true',
     born: 1473,
     dead: 1543,
     id: 6,
@@ -51,7 +56,8 @@ export const scientists = [
   {
     name: 'Max',
     surname: 'Planck',
-    image: '/img/scientists/max-planck.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/max-planck.jpg?raw=true',
     born: 1858,
     dead: 1947,
     id: 7,
@@ -59,7 +65,8 @@ export const scientists = [
   {
     name: 'Katherine',
     surname: 'Blodgett',
-    image: '/img/scientists/katharine-blodgett.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/katharine-blodgett.jpg?raw=true',
     born: 1898,
     dead: 1979,
     id: 8,
@@ -67,7 +74,8 @@ export const scientists = [
   {
     name: 'Ada',
     surname: 'Lovelace',
-    image: '/img/scientists/ada-lovelace.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/ada-lovelace.jpg?raw=true',
     born: 1815,
     dead: 1852,
     id: 9,
@@ -75,7 +83,8 @@ export const scientists = [
   {
     name: 'Sarah E.',
     surname: 'Goode',
-    image: '/img/scientists/sarah-goode.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/sarah-goode.jpg?raw=true',
     born: 1855,
     dead: 1905,
     id: 10,
@@ -83,7 +92,8 @@ export const scientists = [
   {
     name: 'Lise',
     surname: 'Meitner',
-    image: '/img/scientists/lise-meitner.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/lise-meitner.jpg?raw=true',
     born: 1878,
     dead: 1968,
     id: 11,
@@ -91,7 +101,8 @@ export const scientists = [
   {
     name: 'Hanna',
     surname: 'Hammarström',
-    image: '/img/scientists/hanna-hammarström.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/hanna-hammarstrom.jpg?raw=true',
     born: 1829,
     dead: 1909,
     id: 12,
