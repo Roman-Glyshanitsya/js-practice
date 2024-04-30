@@ -2,7 +2,7 @@ export const scientists = [
   {
     name: 'Albert',
     surname: 'Einstein',
-    image: '/img/scientists/albert-einstein.jpg',
+    image: 'js-practice/src/img/scientists/albert-einstein.jpg',
     born: 1879,
     dead: 1955,
     id: 1,
@@ -10,7 +10,8 @@ export const scientists = [
   {
     name: 'Isaac',
     surname: 'Newton',
-    image: '/img/scientists/isaac-newtont.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/isaac-newtont.jpg?raw=true',
     born: 1643,
     dead: 1727,
     id: 2,
