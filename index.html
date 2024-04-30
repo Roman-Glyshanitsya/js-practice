@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-practice/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-practice/assets/index-77b0dce7.css">
+    <link rel="stylesheet" href="/js-practice/assets/index-9a2a0c71.css">
   </head>
   <body>
     <header class="header">
@@ -166,7 +166,7 @@
     </div>
   </div>
 
-  <p class="p-r-s__winner" id="winner-text"></p>
+  <p class="p-r-s__winner" id="winner-text">Зроби вибір</p>
   <div class="p-r-s__comp-choice" id="comp-choice"></div>
 </section>
 
@@ -218,15 +218,18 @@
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
+        id="value"
       />
-      <button class="time-calculato__button">
+      <button class="time-calculato__button" id="button">
         <svg class="time-calculato__button__icon" width="15" height="15">
           <use href="/js-practice/assets/symbol-defs-e3c2b49b.svg#icon-loupe"></use>
         </svg>
       </button>
     </form>
     <div class="time-calculator__dot-line"></div>
-    <div class="time-calculator__result-container">3 дн. 15:45:01</div>
+    <div class="time-calculator__result-container" id="result">
+      0 дн. 00:00:00
+    </div>
   </div>
 </section>
 
