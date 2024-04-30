@@ -77,14 +77,14 @@
   <div class="line"></div>
   <h2 class="section__title">Перевір в який рік ти народився</h2>
   <div class="birth-year__input-thumb">
-    <form class="birth-year__form" autocomplete="off" id="form">
+    <form class="birth-year__form" autocomplete="off" id="birth-year-form">
       <input
         class="birth-year__input"
         type="text"
+        name="year"
         pattern="^[ 0-9]+$"
         placeholder="Введіть рік народження"
         title="Введіть рік"
-        id="year__input"
       />
       <button class="birth-year__button" id="year__btn">
         <svg class="birth-year__button__icon" width="15" height="15">
@@ -100,14 +100,14 @@
   <div class="line"></div>
   <h2 class="section__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="guess-number__input-thumb">
-    <form class="guess-number__form" autocomplete="off">
+    <form class="guess-number__form" autocomplete="off" id="guess-number-form">
       <input
         class="guess-number__input"
         type="text"
+        name="usernumber"
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
-        id="guess__input"
       />
       <button class="guess-number__button" id="guess__btn">
         <svg class="guess-number__button__icon" width="15" height="15">
@@ -211,14 +211,18 @@
   <div class="line"></div>
   <h2 class="section__title">Калькулятор часу</h2>
   <div class="time-calculator__container">
-    <form class="time-calculator__form">
+    <form
+      class="time-calculator__form"
+      autocomplete="off"
+      id="time-calculator-form"
+    >
       <input
         class="time-calculator__input"
         type="text"
+        name="usernumber"
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
-        id="value"
       />
       <button class="time-calculato__button" id="button">
         <svg class="time-calculato__button__icon" width="15" height="15">
