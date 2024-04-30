@@ -13,6 +13,9 @@ function onBtnClick(e) {
   if (computerRandomNumber === userNumber) {
     textGuess.textContent = `Вітаю, ви вгадали число! ${computerRandomNumber}`;
     textGuess.style.color = '#039900';
+  } else if (userNumber > 10) {
+    textGuess.textContent = 'Введіть число від 1 до 10!';
+    textGuess.style.color = '#990000';
   } else {
     textGuess.textContent = `Ви програли, комп’ютер загадав ${computerRandomNumber}`;
     textGuess.style.color = '#990000';

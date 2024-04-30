@@ -9,14 +9,17 @@
         pattern="^[ 0-9]+$"
         placeholder="Введіть число"
         title="Введіть число"
+        id="value"
       />
-      <button class="time-calculato__button">
+      <button class="time-calculato__button" id="button">
         <svg class="time-calculato__button__icon" width="15" height="15">
           <use href="/img/icons/symbol-defs.svg#icon-loupe"></use>
         </svg>
       </button>
     </form>
     <div class="time-calculator__dot-line"></div>
-    <div class="time-calculator__result-container">3 дн. 15:45:01</div>
+    <div class="time-calculator__result-container" id="result">
+      0 дн. 00:00:00
+    </div>
   </div>
 </section>
