@@ -23,7 +23,7 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: '../build',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
