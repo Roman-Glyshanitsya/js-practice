@@ -2,7 +2,7 @@ export const scientists = [
   {
     name: 'Albert',
     surname: 'Einstein',
-    image: '/img/scientists/albert-einstein.jpg',
+    image: './img/scientists/albert-einstein.jpg',
     born: 1879,
     dead: 1955,
     id: 1,
@@ -10,7 +10,7 @@ export const scientists = [
   {
     name: 'Isaac',
     surname: 'Newton',
-    image: '/img/scientists/isaac-newtont.jpg',
+    image: './img/scientists/isaac-newtont.jpg',
     born: 1643,
     dead: 1727,
     id: 2,
@@ -18,7 +18,7 @@ export const scientists = [
   {
     name: 'Galileo',
     surname: 'Galilei',
-    image: '/img/scientists/galileo-galilei.jpg',
+    image: './img/scientists/galileo-galilei.jpg',
     born: 1564,
     dead: 1642,
     id: 3,
@@ -26,7 +26,7 @@ export const scientists = [
   {
     name: 'Marie',
     surname: 'Curie',
-    image: '/img/scientists/marie-curie.jpg',
+    image: './img/scientists/marie-curie.jpg',
     born: 1867,
     dead: 1934,
     id: 4,
@@ -34,7 +34,7 @@ export const scientists = [
   {
     name: 'Johannes',
     surname: 'Kepler',
-    image: '/img/scientists/johannes-kepler.jpg',
+    image: './img/scientists/johannes-kepler.jpg',
     born: 1571,
     dead: 1630,
     id: 5,
@@ -42,7 +42,7 @@ export const scientists = [
   {
     name: 'Nicolaus',
     surname: 'Copernicus',
-    image: '/img/scientists/nicolaus-copernicus.jpg',
+    image: './img/scientists/nicolaus-copernicus.jpg',
     born: 1473,
     dead: 1543,
     id: 6,
@@ -50,7 +50,7 @@ export const scientists = [
   {
     name: 'Max',
     surname: 'Planck',
-    image: '/img/scientists/max-planck.jpg',
+    image: './img/scientists/max-planck.jpg',
     born: 1858,
     dead: 1947,
     id: 7,
