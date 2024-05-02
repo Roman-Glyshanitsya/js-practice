@@ -3,7 +3,7 @@
   <h2 class="section__title">Google динозавр</h2>
   <div class="dinosaur__container">
     <div class="dinosaur__overlay">
-      <p class="dinosaur__score">0</p>
+      <p class="dinosaur__score" id="score">0</p>
       <!-- <div class="game-over__thumb">
         <p>Game Over!</p>
         <p class="dinosaur__points">Points:</p>
@@ -13,11 +13,11 @@
       <img
         class="dinosaur__player"
         src="img/dinosaur/dino-stationary.png"
-        alt=""
+        alt="dinosaur"
+        id="dinosaur"
       />
-      <!-- <img class="dinosaur__cactus" src="/img/dinosaur/cactus.png" alt="" /> -->
-      <img src="img/dinosaur/ground.png" class="dinosaur__ground" />
-      <img src="img/dinosaur/ground.png" class="dinosaur__ground" />
+      <img src="img/dinosaur/ground.png" class="dinosaur__ground" data-ground />
+      <img src="img/dinosaur/ground.png" class="dinosaur__ground" data-ground />
     </div>
   </div>
   <button class="dinosaur__start-btn" id="dinosaur__start-btn">Start!</button>

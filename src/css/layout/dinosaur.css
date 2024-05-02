@@ -5,14 +5,24 @@
     width: 720px;
     margin: 0 auto;
     margin-bottom: 36px;
+    /* outline: 1px solid red; */
 }
 
-.dinosaur__overlay {}
+.dinosaur__overlay {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
 
-.dinosaur__score {}
+.dinosaur__score {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
 .game-over__thumb {
-    display: none;
+    /* display: none; */
 
     /* position: absolute;
     top: 50%;
@@ -41,19 +51,30 @@
 }
 
 .dinosaur__player {
-    /* position: absolute;
-    bottom: 10px;
-    left: 100px;
+    --bottom: 0;
+    position: absolute;
+    left: 2%;
+    bottom: calc(var(--bottom) * 1%);
+
     width: 50px;
-    height: 60px; */
+    height: 60px;
+}
+
+.dinosaur__ground {
+    --left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
 }
 
 .dinosaur__cactus {
-    /* position: absolute;
-    right: 100px;
-    bottom: 10px;
-    width: 32px;
-    height: 50px; */
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+
+    width: 50px;
+    height: 60px;
 }
 
 .dinosaur__start-btn {
