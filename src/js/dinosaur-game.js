@@ -14,6 +14,8 @@ import {
 const startBtn = document.getElementById('dinosaur__start-btn');
 const scoreEl = document.getElementById('score');
 
+document.addEventListener('keydown', onStartBtnClick, { once: true });
+
 const SPEED_SCALE_INCREASE = 0.00001;
 
 let lastTime;
