@@ -12,9 +12,9 @@ import {
 } from './dinosaur/cactus.js';
 
 const startBtn = document.getElementById('dinosaur__start-btn');
-const tryAgainBtn = document.getElementById('try-again__btn');
 const scoreEl = document.getElementById('score');
 const looseScreen = document.getElementById('loose');
+const points = document.getElementById('points');
 
 startBtn.addEventListener('click', handleStart, { once: true });
 
@@ -77,14 +77,15 @@ function handleStart() {
   setupGround();
   setupDino();
   setupCactus();
-  looseScreen.classList.add('hide');
+  looseScreen.classList.remove('show');
   window.requestAnimationFrame(update);
 }
 
 function handleLose() {
   setDinoLose();
   setTimeout(() => {
-    document.addEventListener('keydown', handleStart, { once: true });
-    looseScreen.classList.remove('hide');
+    startBtn.addEventListener('click', handleStart, { once: true });
+    looseScreen.classList.add('show');
+    points.textContent = Math.floor(score);
   }, 100);
 }
