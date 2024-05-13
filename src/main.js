@@ -5,4 +5,5 @@ import './js/p-r-s';
 import './js/time-calculator';
 import './js/dinosaur-game';
 import './js/football';
+import './js/three-numbers';
 import './js/scientest';
