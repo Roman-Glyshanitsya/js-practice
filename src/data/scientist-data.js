@@ -2,7 +2,8 @@ export const scientists = [
   {
     name: 'Albert',
     surname: 'Einstein',
-    image: '/scientists/albert-einstein.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/albert-einstein.jpg?raw=true',
     born: 1879,
     dead: 1955,
     id: 1,
@@ -10,7 +11,8 @@ export const scientists = [
   {
     name: 'Isaac',
     surname: 'Newton',
-    image: '/scientists/isaac-newtont.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/isaac-newtont.jpg?raw=true',
     born: 1643,
     dead: 1727,
     id: 2,
@@ -18,7 +20,8 @@ export const scientists = [
   {
     name: 'Galileo',
     surname: 'Galilei',
-    image: '/scientists/galileo-galilei.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/galileo-galilei.jpg?raw=true',
     born: 1564,
     dead: 1642,
     id: 3,
@@ -26,7 +29,8 @@ export const scientists = [
   {
     name: 'Marie',
     surname: 'Curie',
-    image: '/scientists/marie-curie.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/marie-curie.jpg?raw=true',
     born: 1867,
     dead: 1934,
     id: 4,
@@ -34,7 +38,8 @@ export const scientists = [
   {
     name: 'Johannes',
     surname: 'Kepler',
-    image: '/scientists/johannes-kepler.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/johannes-kepler.jpg?raw=true',
     born: 1571,
     dead: 1630,
     id: 5,
@@ -42,7 +47,8 @@ export const scientists = [
   {
     name: 'Nicolaus',
     surname: 'Copernicus',
-    image: '/scientists/nicolaus-copernicus.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/nicolaus-copernicus.jpg?raw=true',
     born: 1473,
     dead: 1543,
     id: 6,
@@ -50,7 +56,8 @@ export const scientists = [
   {
     name: 'Max',
     surname: 'Planck',
-    image: '/scientists/max-planck.jpg',
+    image:
+      'https://github.com/Roman-Glyshanitsya/js-practice/blob/main/src/img/scientists/max-planck.jpg?raw=true',
     born: 1858,
     dead: 1947,
     id: 7,
