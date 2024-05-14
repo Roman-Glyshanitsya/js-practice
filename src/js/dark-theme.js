@@ -1,5 +1,5 @@
-import darkUrl from '../../assets/dark-theme-icon.svg';
-import lightUrl from '../../assets/light-theme-icon.svg';
+import darkUrl from '../img/icons/dark-theme-icon.svg';
+import lightUrl from '../img/icons/light-theme-icon.svg';
 
 const icon = document.getElementById('icon');
 
