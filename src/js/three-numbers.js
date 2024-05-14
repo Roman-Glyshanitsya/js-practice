@@ -1,7 +1,15 @@
-// const inputList = document.querySelectorAll('.three-numbers__input');
+const firstInput = document.getElementById('first-input');
+const secondtInput = document.getElementById('second-input');
+const thirdtInput = document.getElementById('third-input');
+const resultEl = document.getElementById('max-number');
 
-// inputList.addEventListener('input', () => {
-//   console.log(inputList.value);
-// });
+function findBiggestNumber() {
+  const maxNumber = Math.max(
+    firstInput.value,
+    secondtInput.value,
+    thirdtInput.value
+  );
+  resultEl.textContent = maxNumber;
+}
 
-// inputList.forEach(number => {});
+document.addEventListener('input', findBiggestNumber);
