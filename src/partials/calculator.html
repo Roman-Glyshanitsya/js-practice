@@ -3,11 +3,13 @@
   <h2 class="section__title">Калькулятор</h2>
   <div class="calculator__container">
     <input
-      type="text"
+      type="number"
       class="calculator__input"
       pattern="^[ 0-9]+$"
       placeholder="Введіть число"
       title="Введіть число"
+      autocomplete="off"
+      id="calc-first-input"
     />
     <ul class="calculator__operation__list">
       <li class="calculator__operation__item">
@@ -24,13 +26,15 @@
       </li>
     </ul>
     <input
-      type="text"
+      type="number"
       class="calculator__input"
       pattern="^[ 0-9]+$"
       placeholder="Введіть число"
       title="Введіть число"
+      autocomplete="off"
+      id="calc-second-input"
     />
-    <button class="calculator__operation__button">=</button>
+    <button class="calculator__result__button">=</button>
     <p class="calculator__result">Результат</p>
   </div>
 </section>
