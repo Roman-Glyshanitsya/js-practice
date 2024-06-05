@@ -1,0 +1,99 @@
+.wellcome-window {
+    position: relative;
+    width: 576px;
+    height: 316px;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 46px 0;
+
+    outline: 2px solid black;
+}
+
+.wellcome-window__close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
+
+.wellcome-window__close-icon {
+    width: 15px;
+    height: 15px;
+    fill: #000;
+}
+
+.wellcome-window__text {
+    color: #000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 42px;
+}
+
+.wellcome-window__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.wellcome-window__label {
+    color: #000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.wellcome-window__input {
+    width: 169px;
+    height: 35px;
+    color: #7E7E7E;
+    background-color: #D7D7D7;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.wellcome-window__button {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 20px;
+    background-color: #000;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+}
+
+.wellcome-window__img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.sword {
+    top: 154px;
+    left: 41px;
+}
+
+.game {
+    top: 154px;
+    right: 41px;
+}
+
+.puzzle {
+    bottom: 56px;
+    left: 85px;
+}
+
+.tic-tac-toe {
+    bottom: 56px;
+    right: 85px;
+}

@@ -1,0 +1,59 @@
+.thanks-window {
+    position: relative;
+    width: 463px;
+    height: 245px;
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 83px 0;
+
+    outline: 2px solid black;
+}
+
+.thanks-window__close-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+}
+
+.thanks-window__close-icon {
+    width: 15px;
+    height: 15px;
+    fill: #000;
+}
+
+.thanks-window__text {
+    color: #000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.thanks-window__img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.sword {
+    top: 69px;
+    left: 43px;
+}
+
+.game {
+    top: 69px;
+    right: 43px;
+}
+
+.puzzle {
+    bottom: 70px;
+    left: 87px;
+}
+
+.tic-tac-toe {
+    bottom: 70px;
+    right: 86px;
+}
