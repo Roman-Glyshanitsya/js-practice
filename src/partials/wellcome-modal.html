@@ -1,44 +1,48 @@
-<div class="wellcome-window">
-  <button class="wellcome-window__close-btn">
-    <svg class="wellcome-window__close-icon">
-      <use href="/img/icons/symbol-defs.svg#icon-close"></use>
-    </svg>
-  </button>
-  <p class="wellcome-window__text">
-    Привіт! <br />
-    Ви потрапили на сайт інтерактивних ігор та завдань <br />
-    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
-    Бажаємо Вам гарно провести час!
-  </p>
-  <form class="wellcome-window__form">
-    <label for="name" class="wellcome-window__label">Введіть своє ім’я:</label>
-    <input
-      type="text"
-      class="wellcome-window__input"
-      id="name"
-      autocomplete="off"
-      placeholder="Ваше ім’я..."
+<div class="backdrop show-modal" data-modal>
+  <div class="wellcome-window">
+    <button class="wellcome-window__close-btn">
+      <svg class="wellcome-window__close-icon">
+        <use href="/img/icons/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="wellcome-window__text">
+      Привіт! <br />
+      Ви потрапили на сайт інтерактивних ігор та завдань <br />
+      Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br />
+      Бажаємо Вам гарно провести час!
+    </p>
+    <form class="wellcome-window__form">
+      <label for="name" class="wellcome-window__label"
+        >Введіть своє ім’я:</label
+      >
+      <input
+        type="text"
+        class="wellcome-window__input"
+        id="name"
+        autocomplete="off"
+        placeholder="Ваше ім’я..."
+      />
+      <button class="wellcome-window__button">Зберегти</button>
+    </form>
+    <img
+      src="/img/wellcome-window/sword.png"
+      alt="sword"
+      class="wellcome-window__img sword"
     />
-    <button class="wellcome-window__button">Зберегти</button>
-  </form>
-  <img
-    src="/img/wellcome-window/sword.png"
-    alt="sword"
-    class="wellcome-window__img sword"
-  />
-  <img
-    src="/img/wellcome-window/game.png"
-    alt="game"
-    class="wellcome-window__img game"
-  />
-  <img
-    src="/img/wellcome-window/puzzle.png"
-    alt="puzzle"
-    class="wellcome-window__img puzzle"
-  />
-  <img
-    src="/img/wellcome-window/tic-tac-toe.png"
-    alt="tic-tac-toe"
-    class="wellcome-window__img tic-tac-toe"
-  />
+    <img
+      src="/img/wellcome-window/game.png"
+      alt="game"
+      class="wellcome-window__img game"
+    />
+    <img
+      src="/img/wellcome-window/puzzle.png"
+      alt="puzzle"
+      class="wellcome-window__img puzzle"
+    />
+    <img
+      src="/img/wellcome-window/tic-tac-toe.png"
+      alt="tic-tac-toe"
+      class="wellcome-window__img tic-tac-toe"
+    />
+  </div>
 </div>
