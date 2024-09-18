@@ -8,3 +8,4 @@ import './js/dinosaur-game';
 import './js/football';
 import './js/three-numbers';
 import './js/scientest';
+import './js/wellcome-modal';

@@ -7,22 +7,18 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
     transition: opacity 350ms linear;
 }
 
-.backdrop.show-modal {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 
 .wellcome-window {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -31,7 +27,6 @@
     border-radius: 20px;
     background-color: #FFF;
     padding: 46px 41px;
-
     transition: transform 350ms linear;
 }
 
@@ -115,21 +110,22 @@
     height: 30px;
 }
 
-.sword {
-    /* margin-top: 80px; */
+.w-sword {
+    top: 154px;
+    left: 41px;
 }
 
-/* .game {
+.w-game {
     top: 154px;
     right: 41px;
-} */
+}
 
-/* .puzzle {
-    bottom: 156px;
+.w-puzzle {
+    bottom: 56px;
     left: 85px;
-} */
+}
 
-/* .tic-tac-toe {
+.w-tic-tac-toe {
     bottom: 56px;
     right: 85px;
-} */
+}
