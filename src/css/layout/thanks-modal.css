@@ -1,26 +1,49 @@
+.thanks__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+
+    transition: opacity 350ms linear;
+}
+
+.thanks__backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .thanks-window {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     position: relative;
     width: 463px;
     height: 245px;
     border-radius: 20px;
     background-color: #FFF;
     padding: 83px 0;
-
-    outline: 2px solid black;
 }
 
 .thanks-window__close-btn {
     position: absolute;
     top: 30px;
     right: 30px;
-    width: 25px;
-    height: 25px;
+    border: none;
     background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .thanks-window__close-icon {
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    height: 25px;
     fill: #000;
 }
 
@@ -38,22 +61,22 @@
     height: 30px;
 }
 
-/* .sword {
+.th-sword {
     top: 69px;
-    left: 43px;
+    left: 42px;
 }
 
-.game {
+.th-game {
     top: 69px;
-    right: 43px;
+    right: 42px;
 }
 
-.puzzle {
+.th-puzzle {
     bottom: 70px;
     left: 87px;
 }
 
-.tic-tac-toe {
+.th-tic-tac-toe {
     bottom: 70px;
     right: 86px;
-} */
+}

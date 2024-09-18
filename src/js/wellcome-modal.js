@@ -8,20 +8,17 @@ closeBtn.addEventListener('click', onCloseBtnClick);
 saveBtn.addEventListener('click', onSaveBtnClick);
 
 function onCloseBtnClick(e) {
-  if (e.currentTarget === closeBtn) {
-    modalBackdrop.classList.add('is-hidden');
-  }
+  modalBackdrop.classList.add('is-hidden');
 }
 
 function onSaveBtnClick(e) {
   e.preventDefault();
-  if (e.currentTarget === saveBtn) {
-    modalBackdrop.classList.add('is-hidden');
-    console.log(input.value);
-    if (input.value) {
-      userName.textContent = input.value;
-    } else {
-      userName.textContent = 'User';
-    }
+
+  modalBackdrop.classList.add('is-hidden');
+
+  if (input.value) {
+    userName.textContent = input.value;
+  } else {
+    userName.textContent = 'User';
   }
 }
