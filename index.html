@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/js-practice/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/js-practice/assets/index-98d0cea9.css">
+    <link rel="stylesheet" href="/js-practice/assets/index-e663efff.css">
   </head>
   <body>
     <header class="header">
@@ -39,16 +39,10 @@
               <use href="/js-practice/assets/symbol-defs-0b23cb51.svg#icon-header-arrow"></use>
             </svg>
           </a>
-          <ul class="submenu">
-            <li class="submenu__item">
-              <a href="" class="submenu__link">Числовий</a>
-            </li>
-            <li class="submenu__item">
-              <a href="" class="submenu__link">Ігровий</a>
-            </li>
-            <li class="submenu__item">
-              <a href="" class="submenu__link">Ознайомчий</a>
-            </li>
+          <ul class="submenu" id="submenu__filter-list">
+            <li class="submenu__item" id="numerical">Числовий</li>
+            <li class="submenu__item" id="game">Ігровий</li>
+            <li class="submenu__item" id="acquaintance">Ознайомчий</li>
           </ul>
         </li>
         <li class="nav__item">
@@ -75,7 +69,7 @@
     <main>
       <div class="container">
         <h1>Популярні інетрактивні ігри</h1>
-        <section class="birth-year">
+        <section class="birth-year" data-category="numerical">
   <div class="line"></div>
   <h2 class="section__title">Перевір в який рік ти народився</h2>
   <div class="birth-year__input-thumb">
@@ -98,7 +92,7 @@
   </div>
 </section>
 
-        <section class="guess-number">
+        <section class="guess-number" data-category="numerical">
   <div class="line"></div>
   <h2 class="section__title">Вгадай число, яке загадав комп’ютер</h2>
   <div class="guess-number__input-thumb">
@@ -121,7 +115,7 @@
   </div>
 </section>
 
-        <section class="p-r-s">
+        <section class="p-r-s" data-category="game">
   <div class="line"></div>
   <h2 class="section__title">Камінь - ножиці - папір</h2>
 
@@ -172,7 +166,7 @@
   <div class="p-r-s__comp-choice" id="comp-choice"></div>
 </section>
 
-        <section class="calculator">
+        <section class="calculator" data-category="numerical">
   <div class="line"></div>
   <h2 class="section__title">Калькулятор</h2>
   <div class="calculator__container">
@@ -213,7 +207,7 @@
   </div>
 </section>
 
-        <section class="time-calculator">
+        <section class="time-calculator" data-category="numerical">
   <div class="line"></div>
   <h2 class="section__title">Калькулятор часу</h2>
   <div class="time-calculator__container">
@@ -243,7 +237,7 @@
   </div>
 </section>
 
-        <section class="dinosaur">
+        <section class="dinosaur" data-category="game">
   <div class="line"></div>
   <h2 class="section__title">Google динозавр</h2>
   <div class="dinosaur__container">
@@ -267,7 +261,7 @@
   <button class="dinosaur__start-btn" id="dinosaur__start-btn">Start!</button>
 </section>
 
-        <section class="football">
+        <section class="football" data-category="game">
   <div class="line"></div>
   <h2 class="section__title">Футбол</h2>
   <div class="football__field" id="field">
@@ -282,7 +276,7 @@
   </div>
 </section>
 
-        <section class="three-numbers">
+        <section class="three-numbers" data-category="numerical">
   <div class="line"></div>
   <h2 class="section__title">Введіть 3 числа</h2>
   <ul class="three-numbers__list">
@@ -325,7 +319,7 @@
   </p>
 </section>
 
-        <section class="scientist">
+        <section class="scientist" data-category="acquaintance">
   <div class="line"></div>
   <h2 class="section__title">Обери вченого/их</h2>
   <ul class="scientist__list" id="scientist-gallery"></ul>
