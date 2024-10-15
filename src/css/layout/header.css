@@ -58,7 +58,9 @@
 }
 
 .nav__item:first-child:hover .submenu {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav__item:first-child:hover .nav__link__icon {
@@ -66,17 +68,15 @@
 }
 
 .submenu {
-  display: none;
   position: absolute;
   top: 100%;
 
-  /* width: 100%; */
-
   overflow: hidden;
 
-  border: 1px solid var(--secondary-color);
-  border-top: none;
-  border-radius: 0px 0px 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 350ms linear;
 }
 
 .submenu__item {
@@ -86,13 +86,10 @@
 .submenu__item:hover {
   background-color: #F1F1F1;
   color: #000;
+  cursor: pointer;
 }
-
-.submenu__link {}
 
 .switch-dark__icon {
   margin-right: 50px;
   cursor: pointer;
 }
-
-.header__congrats {}
