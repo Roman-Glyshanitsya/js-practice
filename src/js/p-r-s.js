@@ -1,22 +1,23 @@
+import stone from '../img/icons/stone.svg';
+import scissors from '../img/icons/scissors.svg';
+import paper from '../img/icons/paper.svg';
+
 const userChoiceBtns = document.getElementById('buttons-list');
 const compChoiceEl = document.getElementById('comp-choice');
 const winnerText = document.getElementById('winner-text');
 const compResults = document.getElementById('comp-result');
 const userResults = document.getElementById('user-result');
 
-// import paper from '../img/icons/scissors.svg';
-// console.log(paper);
-
 let compWins = 0;
 let userWins = 0;
 
 function compChoiceMarkup(element) {
   if (element === 'stone') {
-    compChoiceEl.innerHTML = '<img src="../img/icons/stone.svg" />';
+    compChoiceEl.innerHTML = `<img src="${stone}" />`;
   } else if (element === 'scissors') {
-    compChoiceEl.innerHTML = '<img src="../img/icons/scissors.svg" />';
+    compChoiceEl.innerHTML = `<img src="${scissors}" />`;
   } else if (element === 'paper') {
-    compChoiceEl.innerHTML = '<img src="../img/icons/paper.svg" />';
+    compChoiceEl.innerHTML = `<img src="${paper}" />`;
   } else {
     compChoiceEl.innerHTML = '';
   }
