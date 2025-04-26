@@ -3,11 +3,27 @@ import { scientists } from '../data/scientist-data';
 const sceintistGalleryList = document.getElementById('scientist-gallery');
 const sceintistBtnsList = document.getElementById('scientist__filter-list');
 
+// Імпортуємо ВСІ картинки
+const scientistImagesImport = import.meta.glob('../img/scientists/*.jpg', {
+  eager: true,
+});
+
+// Формуємо об'єкт для зручного доступу
+const scientistImages = {};
+
+for (const path in scientistImagesImport) {
+  const fileName = path.split('/').pop(); // Витягуємо назву файла
+  scientistImages[fileName] = scientistImagesImport[path].default; // Кладемо у об'єкт
+}
+
 function markupScientistGalary(scientists) {
   return scientists
-    .map(({ name, surname, image, born, dead, id }) => {
+    .map(({ name, surname, born, dead, id }) => {
+      const fileName = `${name.toLowerCase()}-${surname.toLowerCase()}.jpg`;
+      const imageUrl = scientistImages[fileName] || '';
+
       return `
-      <li id="${id}" class="scientist__item" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('${image}');">
+      <li id="${id}" class="scientist__item" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(${imageUrl});">
       <div class="scientist__text-thumb">
       <p>${name} ${surname}</p>
       <p>${born}-${dead}</p>
