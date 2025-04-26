@@ -1,14 +1,18 @@
 import darkUrl from '../img/icons/dark-theme-icon.svg';
 import lightUrl from '../img/icons/light-theme-icon.svg';
 
+// const icons = import.meta.glob('../img/icons/*.svg', { eager: true });
+
+// console.log(icons);
+
 const icon = document.getElementById('icon');
 
 icon.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
 
   if (document.body.classList.contains('dark-theme')) {
-    icon.src = darkUrl;
+    icon.src = '../img/icons/dark-theme-icon.svg';
   } else {
-    icon.src = lightUrl;
+    icon.src = '../img/icons/light-theme-icon.svg';
   }
 });
