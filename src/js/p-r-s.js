@@ -4,19 +4,19 @@ const winnerText = document.getElementById('winner-text');
 const compResults = document.getElementById('comp-result');
 const userResults = document.getElementById('user-result');
 
+// import paper from '../img/icons/scissors.svg';
+// console.log(paper);
+
 let compWins = 0;
 let userWins = 0;
 
 function compChoiceMarkup(element) {
   if (element === 'stone') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/stone.svg" />';
+    compChoiceEl.innerHTML = '<img src="../img/icons/stone.svg" />';
   } else if (element === 'scissors') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/scissors.svg" />';
+    compChoiceEl.innerHTML = '<img src="../img/icons/scissors.svg" />';
   } else if (element === 'paper') {
-    compChoiceEl.innerHTML =
-      '<img src="https://raw.githubusercontent.com/Roman-Glyshanitsya/js-practice/7839aaa232fe0e01754605b788e94eafe6daf656/src/img/icons/paper.svg" />';
+    compChoiceEl.innerHTML = '<img src="../img/icons/paper.svg" />';
   } else {
     compChoiceEl.innerHTML = '';
   }

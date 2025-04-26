@@ -1,10 +1,3 @@
-import darkUrl from '../img/icons/dark-theme-icon.svg';
-import lightUrl from '../img/icons/light-theme-icon.svg';
-
-// const icons = import.meta.glob('../img/icons/*.svg', { eager: true });
-
-// console.log(icons);
-
 const icon = document.getElementById('icon');
 
 icon.addEventListener('click', () => {
