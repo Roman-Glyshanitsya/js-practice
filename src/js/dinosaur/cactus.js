@@ -1,4 +1,4 @@
-import cactus from '../../img/dinosaur/cactus.png';
+import cactusImg from '../../img/dinosaur/cactus.png';
 import {
   getCustomProperty,
   incrementCustomProperty,
@@ -46,7 +46,7 @@ export function getCactusRects() {
 function createCactus() {
   const cactus = document.createElement('img');
   cactus.dataset.cactus = true;
-  cactus.src = cactus;
+  cactus.src = cactusImg;
   cactus.classList.add('dinosaur__cactus');
   setCustomProperty(cactus, '--left', 100);
   worldEl.append(cactus);
