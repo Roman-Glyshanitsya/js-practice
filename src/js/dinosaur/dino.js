@@ -1,3 +1,6 @@
+import dinoStationary from '../../img/dinosaur/dino-stationary.png';
+import dinoRun0 from '../../img/dinosaur/dino-run-0.png';
+import dinoRun1 from '../../img/dinosaur/dino-run-1.png';
 import {
   getCustomProperty,
   incrementCustomProperty,
@@ -41,14 +44,16 @@ export function setDinoLose() {
 }
 
 function handleRun(delta, speedScale) {
+  const dinoRunFrames = [dinoRun0, dinoRun1];
+
   if (isJumping) {
-    dinosaur.src = `img/dinosaur/dino-stationary.png`;
+    dinosaur.src = dinoStationary;
     return;
   }
 
   if (currentFrameTime >= FRAME_TIME) {
     dinoFrame = (dinoFrame + 1) % DINO_FRAME_COUNT;
-    dinosaur.src = `img/dinosaur/dino-run-${dinoFrame}.png`;
+    dinosaur.src = dinoRunFrames[dinoFrame];
     currentFrameTime -= FRAME_TIME;
   }
 
