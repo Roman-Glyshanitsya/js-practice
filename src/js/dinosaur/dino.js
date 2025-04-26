@@ -1,6 +1,8 @@
 import dinoStationary from '../../img/dinosaur/dino-stationary.png';
 import dinoRun0 from '../../img/dinosaur/dino-run-0.png';
 import dinoRun1 from '../../img/dinosaur/dino-run-1.png';
+import dinoLose from '../../img/dinosaur/dino-lose.png';
+
 import {
   getCustomProperty,
   incrementCustomProperty,
@@ -40,7 +42,7 @@ export function getDinoRect() {
 }
 
 export function setDinoLose() {
-  dinosaur.src = 'img/dinosaur/dino-lose.png';
+  dinosaur.src = dinoLose;
 }
 
 function handleRun(delta, speedScale) {
