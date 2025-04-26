@@ -12,11 +12,11 @@ const scientistImagesImport = import.meta.glob('../img/scientists/*.jpg', {
 const scientistImages = {};
 
 for (const path in scientistImagesImport) {
-  const fileName = path.split('/').pop(); // Витягуємо назву файла
-  scientistImages[fileName] = scientistImagesImport[path].default; // Кладемо у об'єкт
+  const fileName = path.split('/').pop();
+  scientistImages[fileName] = scientistImagesImport[path].default;
 }
 
-function markupScientistGalary(scientists) {
+function markupScientistGallery(scientists) {
   return scientists
     .map(({ name, surname, born, dead, id }) => {
       const fileName = `${name.toLowerCase()}-${surname.toLowerCase()}.jpg`;
@@ -24,119 +24,86 @@ function markupScientistGalary(scientists) {
 
       return `
       <li id="${id}" class="scientist__item" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(${imageUrl});">
-      <div class="scientist__text-thumb">
-      <p>${name} ${surname}</p>
-      <p>${born}-${dead}</p>
-      </div>
+        <div class="scientist__text-thumb">
+          <p>${name} ${surname}</p>
+          <p>${born}-${dead}</p>
+        </div>
       </li>`;
     })
     .join('');
 }
 
-sceintistGalleryList.innerHTML = markupScientistGalary(scientists);
+// Функція для плавної появи картинок
+function animateScientistItems() {
+  const scientistItems = document.querySelectorAll('.scientist__item');
+  scientistItems.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add('visible');
+    }, index * 100); // Плавне з'явлення кожного елемента
+  });
+}
+
+// Функція для оновлення галереї
+function updateGallery(scientistsArray) {
+  sceintistGalleryList.innerHTML = markupScientistGallery(scientistsArray);
+  animateScientistItems(); // Анімація після оновлення
+}
+
+// Спочатку виводимо всю галерею
+updateGallery(scientists);
 
 sceintistBtnsList.addEventListener('click', filteredScientest);
 
 function filteredScientest(e) {
   switch (e.target.id) {
     case '1':
-      const filteredByBornList = scientists.filter(
-        ({ born }) => born >= 1800 && born < 1900
+      updateGallery(
+        scientists.filter(({ born }) => born >= 1800 && born < 1900)
       );
-
-      sceintistGalleryList.innerHTML =
-        markupScientistGalary(filteredByBornList);
       break;
-
     case '2':
-      const einstein = scientists.find(
-        ({ name, surname }) => name === 'Albert' && surname === 'Einstein'
-      );
-
-      sceintistGalleryList.innerHTML = markupScientistGalary([einstein]);
+      updateGallery([
+        scientists.find(
+          ({ name, surname }) => name === 'Albert' && surname === 'Einstein'
+        ),
+      ]);
       break;
-
     case '3':
-      const sortedbyNameList = [...scientists].sort((a, b) =>
-        a.name.localeCompare(b.name)
+      updateGallery(
+        [...scientists].sort((a, b) => a.name.localeCompare(b.name))
       );
-
-      sceintistGalleryList.innerHTML = markupScientistGalary(sortedbyNameList);
       break;
-
     case '4':
-      const filteredSurnameList = scientists.filter(({ surname }) =>
-        surname.startsWith('C')
+      updateGallery(
+        scientists.filter(({ surname }) => surname.startsWith('C'))
       );
-
-      sceintistGalleryList.innerHTML =
-        markupScientistGalary(filteredSurnameList);
       break;
-
     case '5':
-      const sortedByLifeSpan = [...scientists].sort(
-        (a, b) => a.dead - a.born - (b.dead - b.born)
+      updateGallery(
+        [...scientists].sort((a, b) => a.dead - a.born - (b.dead - b.born))
       );
-
-      sceintistGalleryList.innerHTML = markupScientistGalary(sortedByLifeSpan);
       break;
-
     case '6':
-      const sortedByFirstLetter = scientists.filter(
-        ({ name }) => name[0] !== 'A'
-      );
-
-      sceintistGalleryList.innerHTML =
-        markupScientistGalary(sortedByFirstLetter);
+      updateGallery(scientists.filter(({ name }) => name[0] !== 'A'));
       break;
-
     case '7':
-      const filteredByMaxBorn = [...scientists].sort(
-        (a, b) => b.born - a.born
-      )[0];
-      sceintistGalleryList.innerHTML = markupScientistGalary([
-        filteredByMaxBorn,
-      ]);
+      updateGallery([[...scientists].sort((a, b) => b.born - a.born)[0]]);
       break;
-
     case '8':
-      const longestLivedScientist = scientists.reduce(
-        (maxLivedScientist, currentScientist) => {
-          const currentLifespan = currentScientist.dead - currentScientist.born;
-          const maxLifespan = maxLivedScientist.dead - maxLivedScientist.born;
-
-          return currentLifespan > maxLifespan
-            ? currentScientist
-            : maxLivedScientist;
-        }
+      const longestLived = scientists.reduce((max, current) =>
+        current.dead - current.born > max.dead - max.born ? current : max
       );
-
-      const shortestLivedScientist = scientists.reduce(
-        (minLivedScientist, currentScientist) => {
-          const currentLifespan = currentScientist.dead - currentScientist.born;
-          const minLifespan = minLivedScientist.dead - minLivedScientist.born;
-
-          return currentLifespan < minLifespan
-            ? currentScientist
-            : minLivedScientist;
-        }
+      const shortestLived = scientists.reduce((min, current) =>
+        current.dead - current.born < min.dead - min.born ? current : min
       );
-      sceintistGalleryList.innerHTML = markupScientistGalary([
-        longestLivedScientist,
-        shortestLivedScientist,
-      ]);
+      updateGallery([longestLived, shortestLived]);
       break;
-
     case '9':
-      const filterByCommonLetter = scientists.filter(
-        ({ name, surname }) => name[0] === surname[0]
+      updateGallery(
+        scientists.filter(({ name, surname }) => name[0] === surname[0])
       );
-
-      sceintistGalleryList.innerHTML =
-        markupScientistGalary(filterByCommonLetter);
       break;
-
     default:
-      sceintistGalleryList.innerHTML = markupScientistGalary(scientists);
+      updateGallery(scientists);
   }
 }
